@@ -2,18 +2,18 @@ from google import genai
 from dotenv import load_dotenv
 import os
 
-# .env file load karega
+# This will load (.env ) file.
 load_dotenv()
 
-# API key read karega
+# Read the API Key.
 api_key = os.getenv("GEMINI_API_KEY")
 
 print("API Key:", api_key)
 
-# Gemini client
+# Client Connection.
 client = genai.Client(api_key=api_key)
 
-# AI se response lo
+# Through this we can api key connected or not.
 response = client.models.generate_content(
     model="gemini-2.5-flash",
     contents="Reply only with: Gemini Connected Successfully"
