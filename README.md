@@ -49,20 +49,20 @@ The application accepts a resume as input, sends it to the Gemini AI model for a
 AI-Resume-Analyzer/
 │
 ├── app.py
-├── requirements.txt
 ├── README.md
 ├── .gitignore
 ├── .env
-│
+├──  test.py
+
+
 ├── templates/
-│      └── index.html
+│      └── home.html
 │
 ├── static/
-│      └── style.css
+│      └── h_design.css
 │
 └── screenshots/
        ├── home.png
-       └── analysis.png
 ```
 # 🧠 How It Works
 
